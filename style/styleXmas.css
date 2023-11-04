@@ -1,0 +1,45 @@
+
+nav{
+    background: linear-gradient(90deg, rgba(205,134,64,1) 0%, rgba(218,184,128,1) 50%, rgba(243,234,207,1) 100%);
+}
+
+
+
+.perfil .top{
+    background-image: url(http://drive.google.com/uc?export=view&id=10siDS0LBNStRRf9bSA-FuxiQiiCi5h71);
+}
+.perfil .top .foto{
+    background: linear-gradient(90deg, rgba(237,49,150,1) 0%, rgba(255,128,0,1) 100%);
+}
+.perfil .top .nombre{
+    color: #b1b7b8;
+}
+.perfil .top .descripcion{
+    color: #b1b7b8;
+    /* color: darkgreen; */
+    font-weight: bolder;
+}
+.perfil .top .elementos a {
+    color: #6D9848;
+}
+.contactame{
+    color: #e66767;
+    border: 2px solid #e66767;
+}
+.contactame:hover{
+    background: #e66767;
+    color: #fff;
+}
+
+.button{
+    background: #f4f4f4;
+}
+
+
+
+.footer{
+	/* background: linear-gradient(90deg, rgba(185,211,234,1) 0%, rgba(11,115,234,1) 26%, rgba(19,93,190,1) 66%, rgba(4,49,117,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(118,205,195,1) 0%, rgba(0,206,107,1) 49%, rgba(0,145,106,1) 100%); */
+    background: linear-gradient(90deg, rgba(118,205,195,1) 0%, rgba(36,165,148,1) 49%, rgba(22,137,122,1) 100%);
+}
+
