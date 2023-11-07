@@ -21,6 +21,12 @@ var Rev = ["http://drive.google.com/uc?export=view&id=1oDZHsdSOPHe9aHDreDKrg3fNY
 "http://drive.google.com/uc?export=view&id=1aG5imr2GsMIe2MKBaFFfxie8EHOQXnly","http://drive.google.com/uc?export=view&id=1MqZFY8f0AUB70QhvX7eaSghS3Gz3R1vG",
 "http://drive.google.com/uc?export=view&id=1MydxCo0lV6Fz5eEXk8ZjLizj141-QchC","http://drive.google.com/uc?export=view&id=1I5BhOI7ZM1gj40PHoYzepqaRCnFfuptM"];
 
+var DAA = ["http://drive.google.com/uc?export=view&id=1PMAMmsCW5o5tH5fMe74z2K104uNE-ovK","http://drive.google.com/uc?export=view&id=1qfu-OB_FExY8KjhWJkRMgPhOtsNbkuJ2",
+"http://drive.google.com/uc?export=view&id=1-XVSpMYXyt-tvUo47ajPWKRd26bemjk1","http://drive.google.com/uc?export=view&id=1QgmAxhpiNZ9vRUuP5khxk9MHirIUpGDk",
+"http://drive.google.com/uc?export=view&id=1fSjNEi_Aka1fVK8InNBQkXCHEABjhvQa","http://drive.google.com/uc?export=view&id=1U6jQOZAp64ssdBsd80exIle82Na35h-p",
+"http://drive.google.com/uc?export=view&id=1SRoJmBroxZcZnCzJKQGK4dRjG3kb92QR","http://drive.google.com/uc?export=view&id=16n9JLvRMSiN15H0UOf_bNLXroulXSFgF",
+"http://drive.google.com/uc?export=view&id=1g1kNPDxjM1xgbmp-WrOBKVkqUFH4RO0W","http://drive.google.com/uc?export=view&id=1djXpkoJ3Igo2OdOrJp5M5XhNVXkPd0mq"];
+
 
 // https://drive.google.com/file/d/1GWVEwQ_dDCA1y0_Ovb98eMuVljVF587D/view?usp=drive_link
 // https://drive.google.com/file/d//view?usp=drive_link
@@ -28,19 +34,31 @@ var Rev = ["http://drive.google.com/uc?export=view&id=1oDZHsdSOPHe9aHDreDKrg3fNY
 
 
 month=11;
-day=18;
+day=21;
 var i = Math.floor(Math.random() * 10);
 let text = document.getElementById("estilo").innerHTML; 
 //i=0;
 
 if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DM[i]);
+    RemoverEscudo();
 }else if ( (month == 11 && day > 16) || (month == 11 && day < 22) ) {
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", Rev[i]);
 }else if ( (month == 12 && day > 16) || (month == 1 && day < 12) ) {
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", xmas[i]);
+    RemoverEscudo();
+}else if( (month == 2 && day >3) && (month == 2 && day < 7) ){
+    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DAA[i]);
+}else if ( (month == 2 && day >10) && (month == 2 && day < 16) ){
+    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DAA[i]);
+    RemoverEscudo();
 }
 
+
+function RemoverEscudo(){
+    const element = document.getElementById("esc");
+    element.remove();
+}
 
 // var DM = ["","",
 // "","",
@@ -58,3 +76,4 @@ if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
 
 // https://api.generadordni.es/v2/holidays/holidays?country=ES&year=2025
 
+// http://drive.google.com/uc?export=view&id=FILEID
