@@ -188,7 +188,7 @@ nav ul li a{
         width: 100vw;
     }
     .escu{
-        margin-left: -13%;
+        margin-left: -10%;
     }    
     .cuerpo{
         width: 65%;
@@ -222,7 +222,7 @@ nav ul li a{
         margin-top: 93%;
     }
 }
-@media (min-height: 325px) and (max-width: 615px) {
+@media (min-height: 325px) and (min-width: 615px) {
 	header{
 		padding-botton: 30%;
 	}
