@@ -33,8 +33,8 @@ var DAA = ["http://drive.google.com/uc?export=view&id=1PMAMmsCW5o5tH5fMe74z2K104
 
 
 
-month=11;
-day=21;
+month=12;
+day=18;
 var i = Math.floor(Math.random() * 10);
 let text = document.getElementById("estilo").innerHTML; 
 //i=0;
