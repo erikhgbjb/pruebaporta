@@ -23,12 +23,13 @@ nav{
     color: #6D9848;
 }
 .contactame{
-    color: #e66767;
-    border: 2px solid #e66767;
+    color: red;
+    border: 2px solid rgb(255,255,0);
+    background: #efb810;
 }
 .contactame:hover{
-    background: #e66767;
-    color: #fff;
+    background: #f9db5c;
+    color: green;
 }
 
 .button{
