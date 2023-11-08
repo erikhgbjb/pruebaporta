@@ -121,6 +121,11 @@ nav ul li a{
         margin-left: 10%;
     }
 }
+@media (max-width: 1024px) and (max-height: 750px){
+    header{
+        padding-bottom: 20%;
+    }
+}
 @media (min-width: 858px) and (max-width: 1006px){
     nav ul li a{
         font-size: 14px;    
@@ -134,7 +139,15 @@ nav ul li a{
         margin-left: 35%;
     }    
 }
+@media (max-width: 707px){
+    .escu{
+        margin-left: 2%;
+    }
+}
 @media (max-width: 574px){
+    .escu{
+        margin-left: -6%;
+    }
     .perfil{
         margin-top: 20%;
     }
@@ -146,6 +159,11 @@ nav ul li a{
     }    
     .footerContainer .socialIcons a{
         margin-left: 0%;
+    }
+}
+@media(max-width: 488px){
+    .escu{
+        margin-left: -3%;
     }
 }
 @media (max-width: 426px){
@@ -229,4 +247,12 @@ nav ul li a{
 	footer{
 		margin-top: 50%;
 	}
+}
+@media (max-height: 700px){
+    header{
+        padding-bottom: 45%;
+    }
+    .footer{
+        margin-top: 75%;
+    }
 }
