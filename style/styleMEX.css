@@ -118,7 +118,7 @@ nav ul li a{
 }
 @media (max-width: 1025px){
     .escu{
-        margin-left: 10%;
+        margin-left: 200%;
     }
 }
 @media (max-width: 1024px) and (max-height: 750px){
