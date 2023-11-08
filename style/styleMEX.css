@@ -178,6 +178,11 @@ nav ul li a{
         width: 79%;
     }   
 }
+@media(min-width: 329px) and (max-width:360px){
+	.escu{
+		margin-left: -10%;
+	}
+}
 @media (max-width: 328px){
     body{
         width: 100vw;
@@ -216,4 +221,12 @@ nav ul li a{
     .footer{
         margin-top: 93%;
     }
+}
+@media (min-height: 325px) and (max-width: 615px) {
+	header{
+		padding-botton: 30%;
+	}
+	footer{
+		margin-top: 35%;
+	}
 }
