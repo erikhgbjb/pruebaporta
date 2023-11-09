@@ -3,8 +3,8 @@ function stilys(){
     let day = date.getDate();
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
-    month=1;
-    day=10;
+    month=3;
+    day=20;
 
     if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
         document.write('<link rel="stylesheet" href="style/styleDM.css" id="inc">');
