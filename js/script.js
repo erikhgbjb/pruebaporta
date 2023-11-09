@@ -56,8 +56,8 @@ var EP = ["http://drive.google.com/uc?export=view&id=1kq9LUbqQP-LvJveJD8gT1GV8gF
 
 
 
-month=12;
-day=18;
+month=3;
+day=20;
 var i = Math.floor(Math.random() * 10);
 let text = document.getElementById("estilo").innerHTML; 
 //i=0;
