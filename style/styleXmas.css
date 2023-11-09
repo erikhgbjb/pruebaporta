@@ -9,14 +9,12 @@ nav{
     background-image: url(http://drive.google.com/uc?export=view&id=10siDS0LBNStRRf9bSA-FuxiQiiCi5h71);
 }
 .perfil .top .foto{
-    background: linear-gradient(90deg, rgba(237,49,150,1) 0%, rgba(255,128,0,1) 100%);
-}
+    background: #efb810}
 .perfil .top .nombre{
-    color: #b1b7b8;
+    color: #efb810;
 }
 .perfil .top .descripcion{
-    color: #b1b7b8;
-    /* color: darkgreen; */
+    color: #c0c0c0;
     font-weight: bolder;
 }
 .perfil .top .elementos a {

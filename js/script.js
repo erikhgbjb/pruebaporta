@@ -34,7 +34,7 @@ var DAA = ["http://drive.google.com/uc?export=view&id=1PMAMmsCW5o5tH5fMe74z2K104
 
 
 month=12;
-day=18;
+day=17;
 var i = Math.floor(Math.random() * 10);
 let text = document.getElementById("estilo").innerHTML; 
 //i=0;
@@ -47,7 +47,7 @@ if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
 }else if ( (month == 12 && day > 16) || (month == 1 && day < 12) ) {
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", xmas[i]);
     RemoverEscudo();
-}else if( (month == 2 && day >3) && (month == 2 && day < 7) ){
+}else if( (month == 2 && day >13) && (month == 2 && day < 7) ){
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DAA[i]);
 }else if ( (month == 2 && day >10) && (month == 2 && day < 16) ){
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DAA[i]);
