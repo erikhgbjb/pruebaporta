@@ -37,7 +37,9 @@ nav{
 	/* color: #ffffff;
 	color: #a23a61; */
     color: green;
+    font-weight: bold;
 }
+
 .footerContainer ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
@@ -53,6 +55,8 @@ nav{
 .footerBottom{
 	text-align: center;
 	color: green;
+    font-weight: bold;
+
 }
 
 
