@@ -256,3 +256,11 @@ nav ul li a{
         margin-top: 75%;
     }
 }
+
+
+
+@media (max-width: 1050px){
+.perfil {
+    width: 60%;
+    }
+}

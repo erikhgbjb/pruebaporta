@@ -4,8 +4,8 @@ function stilys(){
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
 
-    month=3;
-    day=20;
+    month=11;
+    day=18;
 
 
     if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
