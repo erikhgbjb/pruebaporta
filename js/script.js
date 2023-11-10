@@ -2,6 +2,7 @@ const date = new Date();
 let day = date.getDate();
 let month = date.getMonth() + 1;
 let year = date.getFullYear();
+let i = 0;
 
 var xmas = ["http://drive.google.com/uc?export=view&id=1VeLZ06TbnzJt77ZLy6CHiQLEQW2gHN56","http://drive.google.com/uc?export=view&id=12Vy-3O_Y3Yoz9bkWDNDolTv6U8P6j1SA",
 "http://drive.google.com/uc?export=view&id=1slEoYgEpxOajT5vmsgC5lkYixP9ijqPO","http://drive.google.com/uc?export=view&id=1NKtkzRRRgmV--_5xRBQ3I_qrppgglqlq",
@@ -27,13 +28,11 @@ var DAA = ["http://drive.google.com/uc?export=view&id=1PMAMmsCW5o5tH5fMe74z2K104
 "http://drive.google.com/uc?export=view&id=1SRoJmBroxZcZnCzJKQGK4dRjG3kb92QR","http://drive.google.com/uc?export=view&id=16n9JLvRMSiN15H0UOf_bNLXroulXSFgF",
 "http://drive.google.com/uc?export=view&id=1g1kNPDxjM1xgbmp-WrOBKVkqUFH4RO0W","http://drive.google.com/uc?export=view&id=1djXpkoJ3Igo2OdOrJp5M5XhNVXkPd0mq"];
 
-
 var DC = ["http://drive.google.com/uc?export=view&id=1hUHMJ4_6fo1HfIryxfnYW6eJVLC7pL2a","http://drive.google.com/uc?export=view&id=19RomzO1cfFGlhA8KRpdpLn57cee5BtDb",
 "http://drive.google.com/uc?export=view&id=1QUf_NlqbkMbDqMTILSlpIIwfhuyoVj4e","http://drive.google.com/uc?export=view&id=1fDsQ98SjNbNipp8wHClNjmcQjVkrHi0n",
 "http://drive.google.com/uc?export=view&id=1tNiv3W77i0nZeXKkrTyUugVsjjHWZimL","http://drive.google.com/uc?export=view&id=10R6Ep1FoKV_z8u-m_MCOSxYwvYZmju3F",
 "http://drive.google.com/uc?export=view&id=1tU1jzBqgm-A_1nZZDqwERZxhhdvCWpKY","http://drive.google.com/uc?export=view&id=14Ge32qjUb1ooEhMIsMQ-ud-BGkEmDqAB",
 "http://drive.google.com/uc?export=view&id=1A-_wqRNLLxTnshNTXWwK92UdOSb4sL_h","http://drive.google.com/uc?export=view&id=1tqY8OYwTLLIwIiWViJmCdX9K32Lnng6z"];
-
 
 var DB = ["http://drive.google.com/uc?export=view&id=1AAfDRpZlV7WBEm9ecPQlUK6OSAv80XYO","http://drive.google.com/uc?export=view&id=1q2s-OdiXjL6TRu-Qjt1RpuV2NB00nu9Z",
 "http://drive.google.com/uc?export=view&id=1MD3ZYEjtw6A-NYCON-lrJw67h1hOuhR5","http://drive.google.com/uc?export=view&id=1ytK_Eg7uoxHqTAQWlYkZ5lU16IiJPd55",
@@ -41,11 +40,38 @@ var DB = ["http://drive.google.com/uc?export=view&id=1AAfDRpZlV7WBEm9ecPQlUK6OSA
 "http://drive.google.com/uc?export=view&id=1TWJENEVaXx8v8hcLsj03jKq14seDiPkr","http://drive.google.com/uc?export=view&id=1T_v6PjNQM-hNwvg0-flsEa2LK_j8GuHp",
 "http://drive.google.com/uc?export=view&id=1M4s4qu97_tobOm0jHqtW9ssZ_0AQgcm_","http://drive.google.com/uc?export=view&id=1M6KBiNzlQeb0h303IArMwrkIyVvlaGwb"];
 
-var EP = ["http://drive.google.com/uc?export=view&id=1kq9LUbqQP-LvJveJD8gT1GV8gFavV62P","http://drive.google.com/uc?export=view&id=1qT8X9UJFSZZA6pZWNDdlpcJaKXncjfT4",
-"http://drive.google.com/uc?export=view&id=1XZsmnpqdxIaKxRxNGOyCKaMkn7uYDYLC","http://drive.google.com/uc?export=view&id=1lLQsfjwv7Yy-F6wnj9QA19xpJamXFSDx",
-"http://drive.google.com/uc?export=view&id=11xW2ZNUx5feSyrlKfE9OVzxYelaGzhcR","http://drive.google.com/uc?export=view&id=1KGT2qMbPsgbVVyAHD0_EJUhttXf-wxRF",
-"http://drive.google.com/uc?export=view&id=1nRJRmvXUcHTDnf0arWNKOARsaH6Yq7tq","http://drive.google.com/uc?export=view&id=13rOGRobhKVqVLzzfjxFdTqMQIjLejB7S",
-"http://drive.google.com/uc?export=view&id=14ZCwux9qTnD_VW2dtLaLP8xIeh7cxKFX","http://drive.google.com/uc?export=view&id=1J3xeLlj7TKuZxubnRFW4lJmIPdolRdly"];
+var EP = ["http://drive.google.com/uc?export=view&id=1kq9LUbqQP-LvJveJD8gT1GV8gFavV62P","http://drive.google.com/uc?export=view&id=1XZsmnpqdxIaKxRxNGOyCKaMkn7uYDYLC",
+"http://drive.google.com/uc?export=view&id=1lLQsfjwv7Yy-F6wnj9QA19xpJamXFSDx","http://drive.google.com/uc?export=view&id=1KGT2qMbPsgbVVyAHD0_EJUhttXf-wxRF"];
+
+var Sep = ["http://drive.google.com/uc?export=view&id=1UyhCXw5yktlAtVvQql5pyjHSEVyqI0ml","http://drive.google.com/uc?export=view&id=1yS-I31dj3k1DaRuhDYeZ_dWTVwqh626z",
+"http://drive.google.com/uc?export=view&id=12uc4Y__otMmPGYl3677GUNOQHc2e01tu","http://drive.google.com/uc?export=view&id=1j3F4kjWktpT9j-H5YA3gZ7jJbxQ6JFRN",
+"http://drive.google.com/uc?export=view&id=1RZHkqIOC5zZs4XD3KS_iNGmonF8LYjJW","http://drive.google.com/uc?export=view&id=1fIajTFKfw6nKsm9T1R17Mc7ClD54vR7K",
+"http://drive.google.com/uc?export=view&id=1CAP22PN-xarHqQpra0NwrhESSOK4dswn","http://drive.google.com/uc?export=view&id=1rG1YyWdHkqrddvAM-LbECkFiN9yL-iCY",
+"http://drive.google.com/uc?export=view&id=1Ltyi4rPfUjQiDu0n7X7vrqTz6SAnVDHa","http://drive.google.com/uc?export=view&id=1zH_hFofjgXDLkVbaXrWEjCtAIknQH7LD",
+"http://drive.google.com/uc?export=view&id=162-mcEFh04B0TCSO_V3TmMoW7akVdzaF","http://drive.google.com/uc?export=view&id=1M-I9mbFddluHOo_QEh8g11duYdvytkH9",
+"http://drive.google.com/uc?export=view&id=1ROLBrpYV9gGKsmKgATLPfKGj632u-DUA","http://drive.google.com/uc?export=view&id=1Pd-1sGLyMUhoYe989GEuOvimRMzyVAwL"];
+
+var D5M = ["http://drive.google.com/uc?export=view&id=1ZwMbRADWr68lA7r2RvisIP2_tlZHS5jh","http://drive.google.com/uc?export=view&id=124lb2VG9a_vqYJ4XUYI60c0uf7l2N75O",
+"http://drive.google.com/uc?export=view&id=1ArGinE5KZKQwPkenOFhGroqST-SNbcG4","http://drive.google.com/uc?export=view&id=1zOiU0MRzQEqZZw-FWmNLNG1tmLrwZSGo"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -57,36 +83,59 @@ var EP = ["http://drive.google.com/uc?export=view&id=1kq9LUbqQP-LvJveJD8gT1GV8gF
 
 
 
-month=11;
+month=9;
 day=20;
 
-var i = Math.floor(Math.random() * 10);
 let text = document.getElementById("estilo").innerHTML; 
-//i=0;
 
-if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DM[i]);
+if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {//muertos
+    i = aleatorio(10);
+    fondo(DM[i]);
     RemoverEscudo();
-}else if ( (month == 11 && day > 16) || (month == 11 && day < 22) ) {
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", Rev[i]);
-}else if ( (month == 12 && day > 16) || (month == 1 && day < 12) ) {
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", xmas[i]);
+}else if ( (month == 11 && day > 16) || (month == 11 && day < 22) ) {//revolucion
+    i = aleatorio(10);
+    fondo(Rev[i]);
+}else if ( (month == 12 && day > 16) || (month == 1 && day < 12) ) {//navidad
+    i = aleatorio(10);
+    fondo(xmas[i]);
     RemoverEscudo();
-}else if( (month == 2 && day >3) && (month == 2 && day < 7) ){
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DC[i]);
-}else if ( (month == 2 && day > 12) && (month == 2 && day < 16)  ){
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DAA[i]);
+}else if( (month == 2 && day >3) && (month == 2 && day < 7) ){//constitucion
+    i = aleatorio(10);
+    fondo(DC[i]);
+}else if ( (month == 2 && day > 12) && (month == 2 && day < 16)  ){//amor y amistad
+    i = aleatorio(10);
+    fondo(DAA[i]);
     RemoverEscudo();
-}else if ( (month == 2 && day > 22) && (month == 2 && day < 26)  ){
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DB[i]);
-}else if ( (month == 3 && day > 19) && (month == 3 && day < 22)  ){
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", EP[i]);
+}else if ( (month == 2 && day > 22) && (month == 2 && day < 26)  ){//bandera
+    i = aleatorio(10);
+    fondo(DB[i]);
+}else if ( (month == 3 && day > 19) && (month == 3 && day < 22)  ){//primavera
+    i = aleatorio(4);
+    fondo(EP[i]);
     RemoverEscudo();
 }//podrian faltar el 30 de abril, 1 de mayo y 10 de mayo
-else if( (month == 9 && day >0) && (month == 9 && day < 31) ){
-    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", DC[i]);
+else if( (month == 5 && day >3) && (month == 5 && day < 7) ){//5 de Mayo
+    i = aleatorio(4);
+    fondo(D5M[i]);
+}else if( (month == 9 && day >0) && (month == 9 && day < 31) ){//septiembre
+    i = aleatorio(14);
+    fondo(Sep[i]);
 }
 
+
+
+
+
+
+
+
+function fondo(f){
+    document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", f);
+}
+
+function aleatorio(a){
+    return Math.floor(Math.random() * a);
+}
 
 function RemoverEscudo(){
     const element = document.getElementById("esc");
