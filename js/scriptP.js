@@ -5,7 +5,7 @@ function stilys(){
     let year = date.getFullYear();
 
     month=11;
-    day=18;
+    day=20;
 
 
     if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {

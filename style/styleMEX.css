@@ -152,7 +152,7 @@ nav ul li a{
         margin-top: 20%;
     }
     .footer{
-        margin-top: 30%;
+        margin-top: 55%;
     }
     .footerContainer {
         margin-left: 0%;
@@ -182,7 +182,7 @@ nav ul li a{
         margin-left: -26%;
     }
     header{
-        padding-bottom: 20%;
+        padding-bottom: 40%;
     }
     .cuerpo{
         width: 79%;
@@ -240,7 +240,7 @@ nav ul li a{
         margin-top: 93%;
     }
 }
-@media (min-height: 325px) and (min-width: 615px) {
+@media (min-height: 325px) and (max-height: 600px) and (min-width: 615px) and (max-width: 810px) {
 	header{
 		padding-bottom: 45%;
 	}
@@ -261,6 +261,6 @@ nav ul li a{
 
 @media (max-width: 1050px){
 .perfil {
-    width: 60%;
+    width: 345px;
     }
 }
