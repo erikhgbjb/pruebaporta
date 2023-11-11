@@ -43,6 +43,17 @@ var DB = ["http://drive.google.com/uc?export=view&id=1AAfDRpZlV7WBEm9ecPQlUK6OSA
 var EP = ["http://drive.google.com/uc?export=view&id=1kq9LUbqQP-LvJveJD8gT1GV8gFavV62P","http://drive.google.com/uc?export=view&id=1XZsmnpqdxIaKxRxNGOyCKaMkn7uYDYLC",
 "http://drive.google.com/uc?export=view&id=1lLQsfjwv7Yy-F6wnj9QA19xpJamXFSDx","http://drive.google.com/uc?export=view&id=1KGT2qMbPsgbVVyAHD0_EJUhttXf-wxRF"];
 
+///////////////////////////////////
+var DN = ["http://drive.google.com/uc?export=view&id=1OZkxSCvBAAWYdy9YjRRcw2z9fGaxRJ1o","http://drive.google.com/uc?export=view&id=1DWCovMpFVQ99649XmVgMTGIJo5OjDekw",
+"http://drive.google.com/uc?export=view&id=1wKatsSSSoNPmMtqqRcAygKcpv8fQQgKX","http://drive.google.com/uc?export=view&id=1lllTUoJi4FQqfFm7cdSJ0CBk12u5bxki"];
+
+var DT = ["http://drive.google.com/uc?export=view&id=1WxyGBEfuxnYZHhCbN1CCY3sdVJPAEth9","http://drive.google.com/uc?export=view&id=1akoqVq-_vH_c3lWgOzy4HLhcYRdYBLEV",
+"http://drive.google.com/uc?export=view&id=10E-ziyxiqB4p88FJr1bx4ehJO8et9tY8"];
+
+var DMa = ["http://drive.google.com/uc?export=view&id=1sVSzKa8oyjWe3AQ_AKlJ9lgVcvFNKs-f","http://drive.google.com/uc?export=view&id=1XENPZ2GU0ca5_wYugzHX_dIIZp2xSWso",
+"http://drive.google.com/uc?export=view&id=1P31e9DV050ivBjxp_5u88jzDZZdWYJLw"];
+///////////////////////////////////
+
 var Sep = ["http://drive.google.com/uc?export=view&id=1UyhCXw5yktlAtVvQql5pyjHSEVyqI0ml","http://drive.google.com/uc?export=view&id=1yS-I31dj3k1DaRuhDYeZ_dWTVwqh626z",
 "http://drive.google.com/uc?export=view&id=12uc4Y__otMmPGYl3677GUNOQHc2e01tu","http://drive.google.com/uc?export=view&id=1j3F4kjWktpT9j-H5YA3gZ7jJbxQ6JFRN",
 "http://drive.google.com/uc?export=view&id=1RZHkqIOC5zZs4XD3KS_iNGmonF8LYjJW","http://drive.google.com/uc?export=view&id=1fIajTFKfw6nKsm9T1R17Mc7ClD54vR7K",
@@ -77,14 +88,20 @@ var D5M = ["http://drive.google.com/uc?export=view&id=1ZwMbRADWr68lA7r2RvisIP2_t
 
 
 
+
+
+
+
+
+
 // https://drive.google.com/file/d/1GWVEwQ_dDCA1y0_Ovb98eMuVljVF587D/view?usp=drive_link
 // https://drive.google.com/file/d//view?usp=drive_link
 
 
 
 
-month=9;
-day=20;
+month=5;
+day=1;
 
 let text = document.getElementById("estilo").innerHTML; 
 
@@ -112,8 +129,18 @@ if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {//muertos
 }else if ( (month == 3 && day > 19) && (month == 3 && day < 22)  ){//primavera
     i = aleatorio(4);
     fondo(EP[i]);
+    RemoverEscudo();////////////////////////
+}else if( (month == 4 && day == 30) ){//niño
+    i = aleatorio(4);
+    fondo(DN[i]);
     RemoverEscudo();
-}//podrian faltar el 30 de abril, 1 de mayo y 10 de mayo
+}else if( (month == 5 && day == 1) ){//trabajo
+    fondo(DT[aleatorio(3)]);
+    RemoverEscudo();
+}else if( (month == 5 && day == 10) ){//madres
+    fondo(DMa[aleatorio(3)]);
+    RemoverEscudo();
+}///////////////////////////////////////////
 else if( (month == 5 && day >3) && (month == 5 && day < 7) ){//5 de Mayo
     i = aleatorio(4);
     fondo(D5M[i]);

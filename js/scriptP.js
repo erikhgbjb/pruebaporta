@@ -4,8 +4,8 @@ function stilys(){
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
 
-    month=11;
-    day=20;
+    month=5;
+    day=1;
 
 
     if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {
@@ -23,9 +23,20 @@ function stilys(){
     }else if( (month == 3 && day > 19) && (month == 3 && day < 22) ){
         document.write('<link rel="stylesheet" href="style/styleEP.css" id="inc">');
     }//podrian faltar el 30 de abril, 1 de mayo y 10 de mayo
+        ////////////////////////
+        else if( (month == 4 && day == 30) ){//niño
+            estilo("styleDN");
+        }else if( (month == 5 && day == 1) ){//trabajo
+            estilo("styleDT");
+        }else if( (month == 5 && day == 10) ){//madres
+            estilo("styleDMa");
+        }///////////////////////////////////////////
     else if( (month == 9 && day >0) && (month == 9 && day < 31) ){
         document.write('<link rel="stylesheet" href="style/styleMEX.css" id="inc">');
     }
 }
 
 
+function estilo(s){
+    document.write('<link rel="stylesheet" href="style/'+s+'.css" id="inc">');
+}
