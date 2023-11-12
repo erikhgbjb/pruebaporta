@@ -69,70 +69,44 @@ var D5M = ["http://drive.google.com/uc?export=view&id=1ZwMbRADWr68lA7r2RvisIP2_t
 
 
 
+var Gen = ["http://drive.google.com/uc?export=view&id=1EakDkhwrS_sd73bKkfGfRoiAaPI6Y00G","http://drive.google.com/uc?export=view&id=1UgxqmVpoajXe1riDtrcpkVGKarSrfuY-",
+"http://drive.google.com/uc?export=view&id=1m5xN-MnouuUiSqueyCFJoam9PcG1SIT9","http://drive.google.com/uc?export=view&id=1Ws53k_K1jJExK_HN3wjpaGFhhXsSVVL7",
+"http://drive.google.com/uc?export=view&id=13r97qviXfVvz34MAJJjxjymE0BYu1Y1w","http://drive.google.com/uc?export=view&id=1ZPyMwl6VFaNTZA2TbDWfl4x-F6oAJv7h",
+"http://drive.google.com/uc?export=view&id=1Dg8OEZWMM4ttK2KSzdw0MqqmiNw1g0TP","http://drive.google.com/uc?export=view&id=1hmQQuZO7wvPnxRcnehO3QHHe2WQmC4kZ",
+"http://drive.google.com/uc?export=view&id=1bfOIAH9oqhcHRl-tftLIxlENJArVS-us"];
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// https://drive.google.com/file/d/1GWVEwQ_dDCA1y0_Ovb98eMuVljVF587D/view?usp=drive_link
-// https://drive.google.com/file/d//view?usp=drive_link
 
 
 
 
 month=5;
-day=1;
+day=15;
 
 let text = document.getElementById("estilo").innerHTML; 
 
 if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {//muertos
-    i = aleatorio(10);
-    fondo(DM[i]);
+    fondo(DM[aleatorio(10)]);
     RemoverEscudo();
 }else if ( (month == 11 && day > 16) || (month == 11 && day < 22) ) {//revolucion
-    i = aleatorio(10);
-    fondo(Rev[i]);
+    fondo(Rev[aleatorio(10)]);
 }else if ( (month == 12 && day > 16) || (month == 1 && day < 12) ) {//navidad
-    i = aleatorio(10);
-    fondo(xmas[i]);
+    fondo(xmas[aleatorio(10)]);
     RemoverEscudo();
 }else if( (month == 2 && day >3) && (month == 2 && day < 7) ){//constitucion
-    i = aleatorio(10);
-    fondo(DC[i]);
+    fondo(DC[aleatorio(10)]);
 }else if ( (month == 2 && day > 12) && (month == 2 && day < 16)  ){//amor y amistad
-    i = aleatorio(10);
-    fondo(DAA[i]);
+    fondo(DAA[aleatorio(10)]);
     RemoverEscudo();
 }else if ( (month == 2 && day > 22) && (month == 2 && day < 26)  ){//bandera
-    i = aleatorio(10);
-    fondo(DB[i]);
+    fondo(DB[aleatorio(10)]);
 }else if ( (month == 3 && day > 19) && (month == 3 && day < 22)  ){//primavera
-    i = aleatorio(4);
-    fondo(EP[i]);
-    RemoverEscudo();////////////////////////
+    fondo(EP[aleatorio(4)]);
+    RemoverEscudo();
 }else if( (month == 4 && day == 30) ){//niño
-    i = aleatorio(4);
-    fondo(DN[i]);
+    fondo(DN[aleatorio(4)]);
     RemoverEscudo();
 }else if( (month == 5 && day == 1) ){//trabajo
     fondo(DT[aleatorio(3)]);
@@ -140,13 +114,13 @@ if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {//muertos
 }else if( (month == 5 && day == 10) ){//madres
     fondo(DMa[aleatorio(3)]);
     RemoverEscudo();
-}///////////////////////////////////////////
-else if( (month == 5 && day >3) && (month == 5 && day < 7) ){//5 de Mayo
-    i = aleatorio(4);
-    fondo(D5M[i]);
+}else if( (month == 5 && day >3) && (month == 5 && day < 7) ){//5 de Mayo
+    fondo(D5M[aleatorio(4)]);
 }else if( (month == 9 && day >0) && (month == 9 && day < 31) ){//septiembre
-    i = aleatorio(14);
-    fondo(Sep[i]);
+    fondo(Sep[aleatorio(14)]);
+}else{//Resto del año
+    RemoverEscudo();
+    fondo(Gen[aleatorio(9)]);
 }
 
 
