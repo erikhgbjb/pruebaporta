@@ -7,7 +7,6 @@ function stilys(){
     // month=1;
     // day=15;
 
-
 if ((month == 10 && day > 20) && (month == 11 && day < 8) ) {//muertos
         estilo("styleDM");
     }else if ( (month == 11 && day > 16) && (month == 11 && day < 22) ) {//revolucion
