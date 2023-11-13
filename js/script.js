@@ -82,17 +82,18 @@ var Gen = ["http://drive.google.com/uc?export=view&id=1EakDkhwrS_sd73bKkfGfRoiAa
 
 
 
-month=5;
-day=15;
+//  month=5;
+//  day=7;
 
-let text = document.getElementById("estilo").innerHTML; 
 
-if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {//muertos
+
+
+if ((month == 10 && day > 20) && (month == 11 && day < 8) ) {//muertos
     fondo(DM[aleatorio(10)]);
     RemoverEscudo();
-}else if ( (month == 11 && day > 16) || (month == 11 && day < 22) ) {//revolucion
+}else if ( (month == 11 && day > 16) && (month == 11 && day < 22) ) {//revolucion
     fondo(Rev[aleatorio(10)]);
-}else if ( (month == 12 && day > 16) || (month == 1 && day < 12) ) {//navidad
+}else if ( (month == 12 && day > 16) && (month == 1 && day < 12) ) {//navidad
     fondo(xmas[aleatorio(10)]);
     RemoverEscudo();
 }else if( (month == 2 && day >3) && (month == 2 && day < 7) ){//constitucion
@@ -131,6 +132,7 @@ if ((month == 10 && day > 20) || (month == 11 && day < 8) ) {//muertos
 
 
 function fondo(f){
+    let text = document.getElementById("estilo").innerHTML; 
     document.getElementById("estilo").innerHTML = text.replace("images/1.jpg", f);
 }
 
