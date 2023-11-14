@@ -6,7 +6,7 @@ nav{
 
 
 .perfil .top{
-    background: red;
+    background: radial-gradient(circle, rgba(166,165,165,1) 0%, rgba(238,238,240,1) 100%);
 }
 .perfil .top .foto{
     background: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%);
@@ -19,7 +19,10 @@ nav{
     font-weight: bold;
 }
 .perfil .top .elementos a {
-    color: #04b76b;
+    /* color: #04b76b; */
+    background: linear-gradient(to right, #833ab4, #41a2ba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .contactame{
     color: #fff;
@@ -54,8 +57,8 @@ nav{
     opacity: 0.9;
 }
 .footerContainer .socialIcons a:hover{
-	color: #fff ;
-	background-color: #ffffff ;
+	color: #fff;
+	background-color: #ffffff;
     opacity: 1;
 }
 .footerBottom{
