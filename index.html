@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'> -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
     <script src="js/scriptP.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/scriptfecha.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <script>stilys();</script>
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
@@ -39,6 +48,8 @@
             </ul>
         </nav>
     </header>
+
+    <script>backg();</script>
 
     <div class="cuerpo">
         <div class="perfil">
@@ -107,9 +118,10 @@
     </footer>
     
 
-    <script>backg();</script>
+    
     
 </body>
-<script src="js/scriptfecha.js"></script>
+<script> setTimeout('fecha()',1500); </script>
+<script>window.localStorage.clear();sessionStorage.clear();</script>
 </html>
 
