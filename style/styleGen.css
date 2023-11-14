@@ -54,8 +54,8 @@ nav{
     opacity: 0.9;
 }
 .footerContainer .socialIcons a:hover{
-	color: #fff !important;
-	background-color: #ffffff !important;
+	color: #fff ;
+	background-color: #ffffff ;
     opacity: 1;
 }
 .footerBottom{
