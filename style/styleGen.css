@@ -19,10 +19,22 @@ nav{
     font-weight: bold;
 }
 .perfil .top .elementos a {
-    /* color: #04b76b; */
+    color: #04b76b;
     background: linear-gradient(to right, #833ab4, #41a2ba);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.perfil .top .elementos .fa-facebook:hover{
+    -webkit-text-fill-color: #056991;
+}
+.perfil .top .elementos .fa-twitter:hover{
+    -webkit-text-fill-color: #0daff0;
+}
+.perfil .top .elementos .fa-github:hover{
+    -webkit-text-fill-color: #031316;
+}
+.perfil .top .elementos .fa-instagram:hover{
+    -webkit-text-fill-color: #ff53cb;
 }
 .contactame{
     color: #fff;
@@ -82,3 +94,9 @@ nav{
 
 
 
+.perfil .top .elementos .fff{
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: none;
+    color: red;
+}
