@@ -6,7 +6,7 @@ nav{
 
 
 .perfil .top{
-    background: radial-gradient(circle, rgba(166,165,165,1) 0%, rgba(238,238,240,1) 100%);
+    background: red;
 }
 .perfil .top .foto{
     background: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%);
