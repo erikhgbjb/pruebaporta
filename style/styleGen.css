@@ -45,12 +45,18 @@ nav{
 	padding-left: 8px;
 }
 .footerContainer .socialIcons a{
-	background-color: #adadad;
-	color: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%);;
+	/* background-color: #adadad;
+	color: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%); */
+    background: linear-gradient(to right, #833ab4, #41a2ba);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: rgba(131,58,180,1);
+    opacity: 0.9;
 }
 .footerContainer .socialIcons a:hover{
-	color: #833ab4;
-	background-color: #ffffff;
+	color: #fff !important;
+	background-color: #ffffff !important;
+    opacity: 1;
 }
 .footerBottom{
 	text-align: center;
