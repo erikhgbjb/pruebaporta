@@ -20,7 +20,7 @@ nav{
 }
 .perfil .top .elementos a {
     color: #04b76b;
-    background: linear-gradient(to right, #833ab4, #41a2ba);
+    background: linear-gradient(to right, #1A66CC, #2699E6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -65,7 +65,7 @@ nav{
     background: linear-gradient(to right, #833ab4, #41a2ba);
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    color: rgba(131,58,180,1);
+    color: rgba(66 75 207);
     opacity: 0.9;
 }
 .footerContainer .socialIcons a:hover{
