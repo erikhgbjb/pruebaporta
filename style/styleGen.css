@@ -86,18 +86,7 @@ nav{
 
 
 .footer{
-    background-color: #24262b;
+    background: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%);
     border: 1px solid; 
     border-image: linear-gradient(to top, #24262b 30%, #eeeef0 100%) 1; 
-}
-
-
-
-
-
-.perfil .top .elementos .fff{
-    background: none;
-    -webkit-background-clip: none;
-    -webkit-text-fill-color: none;
-    color: red;
 }
