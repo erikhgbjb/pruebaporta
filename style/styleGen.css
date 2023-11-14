@@ -47,7 +47,8 @@ nav{
 }
 
 .button{
-    background: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%);;
+    /* background: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%); */
+    background: #FFF;
 }
 
 .footerContainer ul li a{
