@@ -64,10 +64,10 @@ nav{
 .footerContainer .socialIcons a{
     background: linear-gradient(to right, #833ab4, #41a2ba);
     opacity: 0.9;
-    color: #000;
+    color: #fff;
 }
 .footerContainer .socialIcons a:hover{
-	color: #fff;
+	color: #000;
 	background-color: #ffffff;
         opacity: 1;
 }
