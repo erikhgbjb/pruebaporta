@@ -38,12 +38,13 @@ nav{
 }
 .contactame{
     color: #fff;
-    border: 2px solid #fce28e;
-    background: green;
+    border: solid 3px #a77da7;
+    background: purple;
 }
 .contactame:hover{
-    background: #fce28e;
+    background: #a77da7;
     color: #000;
+    border: solid 3px rgb(93 8 101);
 }
 
 .button{
@@ -52,7 +53,7 @@ nav{
 }
 
 .footerContainer ul li a{
-    color: #7386c1;
+    color: black;
     font-weight: bold;
 }
 
@@ -61,22 +62,18 @@ nav{
 	padding-left: 8px;
 }
 .footerContainer .socialIcons a{
-	/* background-color: #adadad;
-	color: linear-gradient(90deg, rgba(131,58,180,0.7455357142857143) 0%, rgba(65,162,186,1) 100%); */
     background: linear-gradient(to right, #833ab4, #41a2ba);
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    color: rgba(66 75 207);
     opacity: 0.9;
+    color: #000;
 }
 .footerContainer .socialIcons a:hover{
 	color: #fff;
 	background-color: #ffffff;
-    opacity: 1;
+        opacity: 1;
 }
 .footerBottom{
-	text-align: center;
-	color: #43a0bb;
+    text-align: center;
+    color: black;
     font-weight: bold;
 
 }
