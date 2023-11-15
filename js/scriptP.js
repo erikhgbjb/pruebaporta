@@ -5,7 +5,7 @@ function stilys(){
     let year = date.getFullYear();
 
     month=5;
-    day=10;
+    day=1;
 
 if ((month == 10 && day > 20) && (month == 11 && day < 8) ) {//muertos
         estilo("styleDM");

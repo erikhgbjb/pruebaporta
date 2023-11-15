@@ -57,7 +57,7 @@ function backg(){
     "http://drive.google.com/uc?export=view&id=1bfOIAH9oqhcHRl-tftLIxlENJArVS-us"];
 
     month=5;
-    day=10;
+    day=1;
 
     if ((month == 10 && day > 20) && (month == 11 && day < 8) ) {//muertos
         fondo(DM[aleatorio(DM.length)]);
