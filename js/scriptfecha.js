@@ -11,7 +11,7 @@ Date.prototype.addDays =
 function exito() {
     var datos = JSON.parse(this.responseText); //convertir a JSON
     for (var i = 0; i < (Object.keys(datos['holidays']).length); i++) {
-        if (datos['holidays'][i]['observed'] == date.addDays(-379)) {
+        if (datos['holidays'][i]['observed'] == date.addDays(-365)) {
             if (datos['holidays'][i]['public'] == false) {
                 alert("Es día festivo laborable:\n\n"+datos['holidays'][i]['name']);
                 break;
